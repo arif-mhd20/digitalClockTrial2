@@ -1,0 +1,66 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'poppins',  sans-serif;
+    
+}
+
+html, body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: linear-gradient(135deg , #14ffe9, #ffeb3b, #ff00e0);
+
+
+}
+
+.outline{
+    height: 100px;
+    width: 360px;
+    background: linear-gradient(135deg , #14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 15px;
+    border-style:groove;
+    border-width: 10px;
+    border-color: brown;
+    background-image: linear-gradient(to left, red 0%, #ffb199 100%);
+    cursor: default;
+    animation: animate 1.5s linear infinite;
+}
+
+.outline .display{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background: blue;
+    border-style: double;
+    text-align: center;
+    z-index:999;
+}
+
+.outline .display .time{
+        line-height: 85px;
+        color: black;
+        font-size: 25px;
+        font-weight: 600px;
+        letter-spacing: 2px;
+        background-clip: text;
+        -webkit-text-fill-color:#ffea03;
+        text-decoration: none;
+        animation: animate 1.5s linear infinite;
+
+        
+
+        
+}
+
+.outline .display .time:hover{
+    transition: 0.3 ease; 
+}
+
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+
+    } 
+}
